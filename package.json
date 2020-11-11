@@ -4,6 +4,7 @@
   "description": "A sample vue/tpecript projects",
   "main": "index.js",
   "scripts": {
+    "pretty-quick": "pretty-quick",
     "clean": "rm dist/bundle.js",
     "start": "parcel src/index.html",
     "build-prod": "parcel build src/index.html",
@@ -11,18 +12,27 @@
   },
   "dependencies": {
     "vue": "^2.6.12",
-    "vue-hot-reload-api": "^2.3.4"
-  },
+    "vue-class-component": "^7.2.6",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-property-decorator": "^9.0.2",
+    "vue-router": "^3.4.9"
+  },  
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@vue/component-compiler-utils": "^3.2.0",
     "babel-jest": "^26.6.0",
+    "husky": "^5.0.0-beta.0",
     "jest": "^26.6.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.2",
-    "sass": "^1.27.0",
+    "pretty-quick": "^3.1.0",
     "typescript": "^4.0.3",
     "vue-template-compiler": "^2.6.12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }

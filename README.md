@@ -1,6 +1,14 @@
-# empty-project
+# Practice
 
-Empty project.
+Parcel Vue.js project
+
+## Step 2  Install Vuetify and jest
+Vuetify
+ * npm install vuetify
+ * npm install sass sass-loader deepmerge -D
+
+husky
+npm install --save-dev pretty-quick husky
 
 ## Building and running on localhost
 
